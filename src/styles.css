@@ -1,0 +1,215 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-image: url(./images/zane-persaud-qFn515nfhDs-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+#content {
+    width: 100%;
+}
+
+.navbar, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 13px;
+    height: 100px;
+    background-color: rgba(0, 0, 0,  0.421);
+    border-bottom: 3px solid #c3a35fd8;
+}
+
+footer {
+    border-top: 3px solid #c3a35fd8;
+    border-bottom: none;
+}
+
+.navbar > button {
+    border: none;
+    border: 1px solid #c3a35fca;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 9px 22px 9px 22px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar > button:hover {
+    box-shadow: 0px 0px 5px black;
+    background-color: #c3a35fca;
+    color: black;
+    font-weight: 600;
+}
+
+.home, .menu, .contact {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.701);
+    color: white;
+    text-align: center;
+    margin: 20px 150px 20px 150px;
+    padding: 30px;
+    font-size: 1.2rem;
+}
+
+.home > p {
+    letter-spacing: 2.4px;
+    line-height: 50px;
+}
+
+.home > h1 {
+    color: #c3a35fd8;
+    font-family: 'WindSong', cursive;
+    font-weight: 100;
+    font-size: 5rem;
+}
+
+span {
+    color: #c3a35fd8;
+}
+
+.arrow {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: #c3a35fd8;
+    font-size: 2rem;
+    text-align: end;
+    padding-right: 18px;
+    font-family: 'Poppins', sans-serif;
+    transition: transform .4s;
+}
+
+.arrow:hover {
+    transform: scale(1.02);
+    text-shadow: 0px 0px 5px black;
+}
+
+.items {
+    display: flex;
+    gap: 65px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.item {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    transition: transform .4s;
+}
+
+.item:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 0px 20px black;
+}
+
+.item.one {
+    background-image: url("./images/steak.jpg");
+}
+.item.two {
+    background-image: url("./images/grill.jpg");
+}
+.item.three {
+    background-image: url("./images/salad.jpg");
+}
+.item.four {
+    background-image: url("./images/chicken.jpg");
+}
+.item.five {
+    background-image: url("./images/choco.jpg");
+}
+.item.six {
+    background-image: url("./images/cchio.jpg");
+}
+.item.seven {
+    background-image: url("./images/juice.jpg");
+}
+.item.eight {
+    background-image: url("./images/juice2.jpg");
+}
+.item.nine {
+    background-image: url("./images/expensivJuice.jpg");
+}
+.item.ten {
+    background-image: url("./images/beps.jpg");
+}
+
+.item-name {
+    text-align: start;
+}
+
+.item-price {
+    text-align: end;
+    align-self: flex-end;
+}
+
+.item-name, .item-price {
+    background-color:#c3a35fe4;
+    width: fit-content;
+    padding: 7px;
+    color: black;
+    font-weight: 600;
+    box-shadow: 2px 2px 5px black;
+}
+
+.menu-cat {
+    margin: 60px 0px 60px 0px;
+    font-family: 'WindSong', cursive;
+    color: #c3a35feb;
+    font-size: 2.7rem;
+}
+
+.contact {
+    border: 3px solid #c3a35fd8;
+    text-align: start;
+    margin: 20px 300px 20px 300px;
+    font-size: 1rem;
+}
+
+.location-div {
+    width: 480px;
+    height: 300px;
+    background-image: url(./images/location.jpg);
+    justify-self: center;
+    align-self: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact {
+        margin: 20px 200px 20px 200px;
+    }
+    .home, .menu, .contact {
+        margin: 20px 100px 20px 100px;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .contact {
+        margin: 20px 150px 20px 150px;
+    }
+    .home, .menu, .contact {
+        margin: 20px 50px 20px 50px;
+        
+    }
+    .home > h1 {
+        font-size: 3rem;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .home > h1 {
+        font-size: 2.1rem;
+    }
+  }
